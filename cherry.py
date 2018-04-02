@@ -65,14 +65,22 @@ def var_8():
     e2 = lambda x1: (7 - 7 * x1) / 2
     e3 = lambda x1: 0
 
+    f1 = lambda x1: (- 35 * x1 + 175)/50
+    f2 = lambda x1: (- 35 * x1 + 35)/50
+    f3 = lambda x1: (- 35 * x1 + 66.5)/50
+
     fig, ax = plt.subplots()
 
     ax.plot(x1, list(map(e1, x1)))
     ax.plot(x1, list(map(e2, x1)))
-    ax.plot(x1, list(map(e3, x1)))
-    ax.plot([0, 0], [-1, 4])
+    ax.plot(x1, list(map(e3, x1)), color='black')
+    ax.plot([0, 0], [-1, 4], color='black')
 
     ax.add_collection(PatchCollection([Polygon([(1, 0), (0, 1.333), (0, 3.5)], closed=True)], alpha=0.4))
+
+    ax.plot(x1, list(map(f1, x1)))
+    ax.plot(x1, list(map(f2, x1)))
+    ax.plot(x1, list(map(f3, x1)))
 
     ax.set_xlabel('x1')
     ax.set_ylabel('x2')
@@ -81,10 +89,14 @@ def var_8():
     ax.set_ylim((-1, 4))
 
     axis = plt.gca()
-    axis.text(0.2, -0.2, 'x1 = 0')
-    axis.text(-0.15, 0.75, 'x2 = 0', rotation=90)
-    axis.text(0.42, 2, '14x1 + 4x2 = 14', rotation=-68)
-    axis.text(-1.3, 3.1, '200x1 + 150x2 = 200', rotation=-43.8)
+    axis.text(0.2, -0.2, 'x1 = 0', fontdict={'fontsize': 9})
+    axis.text(-0.15, 0.5, 'x2 = 0', fontdict={'fontsize': 9}, rotation=90)
+    axis.text(0.3, 2.4, '14x1 + 4x2 = 14', fontdict={'fontsize': 9}, rotation=-68)
+    axis.text(-1.6, 3.5, '200x1 + 150x2 = 200', fontdict={'fontsize': 9}, rotation=-43.8)
+
+    axis.text(0.5, 3.25, 'x2 = -0.7x1 + 0.02f(A)', fontdict={'fontsize': 9}, rotation=-29)
+    axis.text(-1.7, 2.6, 'x2 = -0.7x1 + 0.02f(B)', fontdict={'fontsize': 9}, rotation=-29)
+    axis.text(-1.7, 2, 'x2 = -0.7x1 + 0.02f(C)', fontdict={'fontsize': 9}, rotation=-29)
 
     axis.text(0.09, 3.5, 'A')
     axis.text(-0.13, 1.2, 'C')
@@ -98,4 +110,4 @@ def var_8():
 
 
 if __name__ == '__main__':
-    var_6()
+    var_8()
