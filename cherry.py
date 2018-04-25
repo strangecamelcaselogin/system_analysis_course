@@ -95,8 +95,8 @@ def var_8():
     axis.text(-1.6, 3.5, '200x1 + 150x2 = 200', fontdict={'fontsize': 9}, rotation=-43.8)
 
     axis.text(0.5, 3.25, 'x2 = -0.7x1 + 0.02f(A)', fontdict={'fontsize': 9}, rotation=-29)
-    axis.text(-1.7, 2.6, 'x2 = -0.7x1 + 0.02f(B)', fontdict={'fontsize': 9}, rotation=-29)
-    axis.text(-1.7, 2, 'x2 = -0.7x1 + 0.02f(C)', fontdict={'fontsize': 9}, rotation=-29)
+    axis.text(-1.7, 2.6, 'x2 = -0.7x1 + 0.02f(С)', fontdict={'fontsize': 9}, rotation=-29)
+    axis.text(-1.7, 2, 'x2 = -0.7x1 + 0.02f(B)', fontdict={'fontsize': 9}, rotation=-29)
 
     axis.text(0.09, 3.5, 'A')
     axis.text(-0.13, 1.2, 'C')
