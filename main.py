@@ -5,7 +5,7 @@ from matplotlib.patches import Polygon
 from matplotlib.collections import PatchCollection
 
 
-def lr1_variant_1_2():
+def lr2_variant_2():
     a1 = 1
     a2 = 2
 
@@ -67,7 +67,7 @@ def lr1_variant_1_2():
     plt.show()
 
 
-def lr1_variant_1_8():
+def lr1_variant_8():
     a1 = 1
     a2 = 3
 
@@ -134,7 +134,7 @@ def lr1_variant_1_8():
     plt.show()
 
 
-def lr1_3():
+def lr2_variant_3():
     a1 = 1.4
     a2 = 2.2
 
@@ -196,7 +196,7 @@ def lr1_3():
     #plt.show()
 
 
-def lr1_6():
+def lr1_variant_6():
     a1 = 2
     a2 = 1.4
 
@@ -260,8 +260,8 @@ def lr1_6():
     plt.show()
 
 if __name__ == '__main__':
-    #lr1_6()
-    lr1_3()
+    #lr1_variant_6()
+    lr2_variant_3()
 
-    #lr1_variant_1_8()
-    #lr1_variant_1_2()
+    #lr1_variant_8()
+    #lr2_variant_2()
